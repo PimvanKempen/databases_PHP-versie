@@ -12,6 +12,15 @@ for ($t=1;$t<=8;$t++) {
 }
 print_r($reeks);
 echo "<br>";
+$macht3=array();
+foreach ($reeks as $waarde) {
+  array_push($macht3,pow($waarde,3));
+}
+$n = 1;
+while (1000 > $macht3[$n]) {
+  echo "$macht3[$n]<br>";
+  $n++;
+}
 
 /****************************
 EINDE VAN JOUW PHPCODE
